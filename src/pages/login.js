@@ -1,44 +1,44 @@
 import React, { useState } from 'react';
 import { useRouter } from 'next/router';
-import { supabase } from '../pages/supabase';
+// import { supabase } from '../pages/supabase';
 
 const LoginForm = () => {
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
   const router = useRouter();
 
-  const fetchDataFromSupabase = async () => {
-    try {
-        const { data, error } = await supabase
-        .from('login') 
-        .select('*')
-        .eq('user', username)
-        .eq('password', password)
+//   const fetchDataFromSupabase = async () => {
+//     try {
+//         const { data, error } = await supabase
+//         .from('login') 
+//         .select('*')
+//         .eq('user', username)
+//         .eq('password', password)
       
 
-      if (error) {
-        window.alert("Invalid Server Error");
-        return;
-      }
+//       if (error) {
+//         window.alert("Invalid Server Error");
+//         return;
+//       }
 
-      if (data && data.length === 1) {
-        // router.push('/book'); 
-        window.alert('Success');
-      } else {
-        window.alert("Invalid Credentials");
-      }
-    } catch (error) {
-        console.log(error);
-      window.alert("Server Error");
-    }
-  };
+//       if (data && data.length === 1) {
+//         // router.push('/book'); 
+//         window.alert('Success');
+//       } else {
+//         window.alert("Invalid Credentials");
+//       }
+//     } catch (error) {
+//         console.log(error);
+//       window.alert("Server Error");
+//     }
+//   };
 
   const handleLoginClick = () => {
     if (!username || !password) {
       window.alert("Please enter both username and password.");
       return;
     }
-    fetchDataFromSupabase();
+    // fetchDataFromSupabase();
   };
 
   return (
