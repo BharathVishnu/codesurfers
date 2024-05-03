@@ -20,7 +20,7 @@ const LoginForm = () => {
 
   const handleLoginClick = () => {
     if (!username || !password || !teamName) {
-      window.alert("Please enter username, password and team name.");
+      window.alert("Inspect says it all !"); //clue1
       return;
     }
     if(username==="testuser" && password==="testpw") {
