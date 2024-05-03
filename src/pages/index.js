@@ -1,8 +1,7 @@
-import Login from "./login";
+import LoginForm from '@/components/login';
 import React, { useState, useEffect } from 'react';
-import Loading from "./loading";
-import Task1 from "./task1";
-import Task2 from "./task2";
+import Loading from "@/components/loading";
+
 export default function Home() {
   const [loading, setLoading] = useState(true);
 
@@ -24,11 +23,7 @@ export default function Home() {
       {loading ? (
         <Loading />
       ) : (
-        <div>
-                 <Login/>
-                 <Task1/>
-                 <Task2/>
-        </div>
+        <LoginForm/>
  
       )} 
     </main>

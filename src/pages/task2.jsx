@@ -9,7 +9,7 @@ const Task2 = () => {
 
   return (
     <div className="flex flex-col items-center">
-      <h1 className="text-3xl font-bold mb-8">Task 1</h1>
+      <h1 className="text-3xl font-bold mb-8">Task 2</h1>
       <audio
         controls
         onPlay={() => setIsPlaying(true)}

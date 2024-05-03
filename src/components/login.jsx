@@ -1,44 +1,34 @@
 import React, { useState } from 'react';
 import { useRouter } from 'next/router';
-// import { supabase } from '../pages/supabase';
+import { supabase } from '../../lib/supabase';
 
 const LoginForm = () => {
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
+  const [teamName,setTeamName] = useState('');
+
   const router = useRouter();
 
-//   const fetchDataFromSupabase = async () => {
-//     try {
-//         const { data, error } = await supabase
-//         .from('login') 
-//         .select('*')
-//         .eq('user', username)
-//         .eq('password', password)
-      
-
-//       if (error) {
-//         window.alert("Invalid Server Error");
-//         return;
-//       }
-
-//       if (data && data.length === 1) {
-//         // router.push('/book'); 
-//         window.alert('Success');
-//       } else {
-//         window.alert("Invalid Credentials");
-//       }
-//     } catch (error) {
-//         console.log(error);
-//       window.alert("Server Error");
-//     }
-//   };
+  const postData = async () => {
+    const response = await supabase.from("user").insert({teamname: teamName});
+    if(response.error===null) {
+      console.log("success");
+      //add the routing to the success page here
+      router.push('/sucess');
+    }
+  };
 
   const handleLoginClick = () => {
-    if (!username || !password) {
-      window.alert("Please enter both username and password.");
+    if (!username || !password || !teamName) {
+      window.alert("Please enter username, password and team name.");
       return;
     }
-    // fetchDataFromSupabase();
+    else {
+      if(username==="testuser" && password==="testpw") {
+        postData(); 
+      }
+    }
+    
   };
 
   return (
@@ -61,6 +51,16 @@ const LoginForm = () => {
             id="password"
             value={password}
             onChange={(e) => setPassword(e.target.value)}
+            className="w-full p-3 bg-blue-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-600"
+          />
+        </div>
+        <div className="mb-6">
+          <label htmlFor="team-name" className="block text-lg font-semibold text-white mb-2">Team Name</label>
+          <input
+            type="text"
+            id="team-name"
+            value={teamName}
+            onChange={(e) => setTeamName(e.target.value)}
             className="w-full p-3 bg-blue-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-600"
           />
         </div>

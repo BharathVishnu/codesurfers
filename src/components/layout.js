@@ -1,7 +1,7 @@
 import Header from "./header";
-import localFont from 'next/font/local';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import Link from "next/link";
 import { useEffect } from 'react';
 
 
@@ -16,9 +16,13 @@ export default function Layout({children}) {
 
     return(
     <>
+        <div className="You found it!! click the link below"></div>
+        <Link href={"/task1"}></Link>
         <Header/>
         <div className={` flex flex-col min-h-screen`} >
-            <main className="flex-auto min-h-screen">{children}</main>
+            <main className="flex-auto min-h-screen">
+                {children}
+            </main>
         </div>
     </>
     );
