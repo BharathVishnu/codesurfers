@@ -12,17 +12,20 @@ const Task1 = () => {
   };
 
   const handleClick = () => {
-    if(key=='ranji') {
+    if(key=='firstislogin') {
         console.log("matched");
-        router.push("/task2");
+        router.push("/lyrastone");
     }
   };  
 
   return (
     <div className="flex flex-col items-center">
-      <h1 className="text-3xl font-bold mb-8">Why Coding May Not Be as Important as You Think</h1>
-      <div className="flex flex-col items-center mb-8">
-        <p>In today's digital age, coding is often hailed as a vital skill for success in various fields, from technology to entrepreneurship. However, it's essential to recognize that coding is not the be-all and end-all of modern life. While coding certainly has its merits and can open up opportunities, its importance may be overstated in some contexts. In this article, we'll explore why coding may not be as crucial as commonly perceived and why other skills and attributes are equally, if not more, valuable in today's world.
+      <h1 className="text-9xl font-bold">TASK 1</h1>
+      <div className="flex flex-col items-center mb-8 text-xl">
+      ... . -.-. --- -. -.. .. ... .--. .- ... ... .-- --- .-. -..
+      </div>
+      <div className="flex flex-col items-center mb-8 ml-16 mr-16">
+        <p>In today's digital age, coding is often hailed as a vital skill <span className='hover:text-red-500 hover:cursor-pointer'>f</span>or success <span className='hover:text-red-500 hover:cursor-pointer'>i</span>n various fields, from technology to entrepreneurship. However, it's essential to recognize that coding is not the be-all and end-all of modern life. While coding certainly has its merits and can open up opportunities, its importance may be overstated in some contexts. In this article, we'll explore why coding may not be as crucial as commonly perceived and why other skills and attributes are equally, if not more, valuable in today's world.
 
 First and foremost, it's essential to acknowledge that not everyone needs to code. While coding skills can be advantageous in certain professions, many careers do not require programming expertise. For example, roles in fields such as marketing, sales, human resources, and graphic design may prioritize other skills such as creativity, communication, problem-solving, and leadership. In these professions, individuals can excel and achieve success without ever writing a line of code.
 

@@ -23,12 +23,14 @@ const LoginForm = () => {
       window.alert("Please enter username, password and team name.");
       return;
     }
-    else {
-      if(username==="testuser" && password==="testpw") {
+    if(username==="testuser" && password==="testpw") {
         postData(); 
-      }
     }
-    
+    else
+    {
+      window.alert("Inspect says it all !"); //clue1
+    }
+
   };
 
   return (
