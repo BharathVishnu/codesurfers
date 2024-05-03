@@ -25,7 +25,7 @@ const Task3 = () => {
       ... . -.-. --- -. -.. .. ... .--. .- ... ... .-- --- .-. -..
       </div>
       {/* link */}
-      <p className='mb-8 test-2xl'>keep your link here</p> 
+      <p className='mb-8 test-2xl'>keep your linkk here</p> 
       <input
         type="text"
         value={key}
