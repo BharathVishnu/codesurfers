@@ -22,7 +22,7 @@ const Task1 = () => {
     <div className="flex flex-col items-center">
       <h1 className="text-9xl font-bold">TASK 1</h1>
       <div className="flex flex-col items-center mb-8 text-xl">
-      ... . -.-. --- -. -.. .. ... .--. .- ... ... .-- --- .-. -..
+      - .... . .-.. . - - . .-. ... .-- .. .-.. .-.. .... . .-.. .--.
       </div>
       <div className="flex flex-col items-center mb-8 ml-16 mr-16">
         <p>In today's digital age, coding is often hailed as a vital skill <span className='hover:text-red-500 hover:cursor-pointer'>f</span>or success <span className='hover:text-red-500 hover:cursor-pointer'>i</span>n various fields, from technology to entrepreneurship. However, it's essential to recognize that coding is not the be-all and end-all of modern life. While coding certainly has its merits and can open up opportunities, its importance may be overstated in some contexts. In this article, we'll explore why coding may not be as crucial as commonly perceived and why other skills and attributes are equally, if not more, valuable in today's world.

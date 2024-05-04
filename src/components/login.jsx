@@ -23,7 +23,7 @@ const LoginForm = () => {
       window.alert("Inspect says it all !"); //clue1
       return;
     }
-    if(username==="testuser" && password==="testpw") {
+    if(username==="hestia" && password==="testpw") {
         postData(); 
     }
     else

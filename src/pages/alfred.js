@@ -14,7 +14,7 @@ const Task3 = () => {
   const handleClick = () => {
     if(key.toUpperCase() =='SECONDISPASSWORD') {
         console.log("matched");
-        router.push("/task3");
+        router.push("/wayne");
     }
   };  
 
@@ -25,7 +25,7 @@ const Task3 = () => {
       ... . -.-. --- -. -.. .. ... .--. .- ... ... .-- --- .-. -..
       </div>
       {/* link */}
-      <p className='mb-8 test-2xl'>keep your linkk here</p> 
+      <p className='mb-8 test-2xl'>https://puzzel.org/en/jigsaw/play?p=-Nx-I0uCNFoooaxKIC0O</p> 
       <input
         type="text"
         value={key}
