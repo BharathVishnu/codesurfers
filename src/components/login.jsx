@@ -23,7 +23,7 @@ const LoginForm = () => {
       window.alert("Inspect says it all !"); //clue1
       return;
     }
-    if(username==="hestia" && password==="testpw") {
+    if(username==="hestia" && password==="561") {
         postData(); 
     }
     else
@@ -37,7 +37,7 @@ const LoginForm = () => {
     <div className="flex items-center justify-center mt-40">
       <div className="bg-yellow rounded-lg p-8 shadow-2xl w-full md:w-2/3 md:max-w-xl">
         <div className="mb-4">
-          <label htmlFor="username" className="block text-lg font-semibold text-white mb-2">Username</label>
+          <label htmlFor="username" className="block text-lg font-semibold text-white mb-2">Login</label>
           <input
             type="text"
             id="username"

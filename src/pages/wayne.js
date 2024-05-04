@@ -23,7 +23,7 @@ const Task3 = () => {
         FIRST--  The thing is one of wonder and awe,having the legacy of a greek godess...lasting 3 long days,my name is what you surely possess
       </div>  
       <div className='rounded-lg bg-gray-200 p-4 text-black mb-10'>
-        SECOND--  your first riddle
+        SECOND--  In the realm of numbers, I stand apart, mistaken for a prime from the start. Mathematicians test, yet I defy, the big brother of pseudo primes am I. From a modest start, my siblings shine, under the name Carmichael, I recline. What am I?
       </div>  
       
       
