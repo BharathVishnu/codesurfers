@@ -20,10 +20,10 @@ const Task3 = () => {
       ... . -.-. --- -. -.. .. ... .--. .- ... ... .-- --- .-. -..
       </div>
       <div className='rounded-lg bg-gray-200 p-4 text-black mb-10'>
-        First--  The thing is one of wonder and awe,having the legacy of a greek godess...lasting 3 long days,my name is what you surely possess
+        FIRST--  The thing is one of wonder and awe,having the legacy of a greek godess...lasting 3 long days,my name is what you surely possess
       </div>  
       <div className='rounded-lg bg-gray-200 p-4 text-black mb-10'>
-        Second--  your first riddle
+        SECOND--  your first riddle
       </div>  
       
       

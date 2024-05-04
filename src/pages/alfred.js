@@ -12,7 +12,7 @@ const Task3 = () => {
   };
 
   const handleClick = () => {
-    if(key.toUpperCase() =='SECONDISPASSWORD') {
+    if(key.toUpperCase() =='CONGRATULATIONS') {
         console.log("matched");
         router.push("/wayne");
     }
